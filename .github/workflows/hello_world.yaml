@@ -1,0 +1,32 @@
+name: Hello and Goodbye World
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the code
+      uses: actions/checkout@v2
+
+    - name: Hello World
+      shell: bash
+      run: echo "Hello World"
+
+  goodbye:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the code
+      uses: actions/checkout@v2
+
+    - name: Goodbye World
+      shell: bash
+      run: echo "Goodbye World"
