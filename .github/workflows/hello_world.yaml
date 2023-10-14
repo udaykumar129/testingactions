@@ -18,7 +18,7 @@ jobs:
 
     - name: Hello World
       shell: bash
-      run: echo "Hello World"
+      run: echo "Hello World2"
 
   goodbye:
     runs-on: ubuntu-latest
